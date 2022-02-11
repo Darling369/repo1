@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    .top{
+      /* 设置宽度高度背景颜色 */
+      height: 50px;
+      width:100%;
+      background:rgba(0,119,255,0.34);
+      position: fixed; /*固定在顶部*/
+      top: 0;/*离顶部的距离为0*/
+    }
+    .top ul{
+      /* 清除ul标签的默认样式 */
+      width: 80%;
+      list-style-type: none;
+      margin: 0 ;
+      padding: 0;
+      overflow: hidden;
+
+
+    }
+    .top li {
+      float:left; /* 使li内容横向浮动，即横向排列  */
+      margin-right:110px;  /* 两个li之间的距离*/
+    }
+
+    .top li a{
+      /* 设置链接内容显示的格式*/
+      display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+      color:white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; /* 去除下划线 */
+    }
+    .top li a:hover{
+      /* 鼠标选中时背景变为黑色 */
+      background-color:cyan;
+    }
+    .top ul li ul{
+      /* 设置二级菜单 */
+      width: auto;
+      background:rgb(189, 181, 181);
+      position: absolute;
+      display: none; /* 默认隐藏二级菜单的内容 */
+
+    }
+    .top ul li ul li{
+      /* 二级菜单li内容的显示 */
+      margin-right:0;
+      float:none;
+      text-align: center;
+    }
+    .top ul li:hover ul{
+      /* 鼠标选中二级菜单内容时 */
+      display: block;
+    }
+    /*关于下面的 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+<body >
+<div class="top" >
+  <center>
+    <ul id="center">
+      <li><a href="#">简介</a></li>
+      <li><a href="#">了解我们</a></li>
+      <li><a href="#">合作交流</a></li>
+      <li><a href="#"><b>联系我们</b></a></li>
+      <li><a href="#">加入我们</a></li>
+      <li>
+        <a href="#">注册登录</a>
+        <ul>
+          <li><a href="/demo1/demo.jsp">注册登录</a></li>
+          <li><a href="/demo1/adminlogin.jsp">管理员登录</a></li>
+        </ul>
+      </li>
+    </ul>
+  </center>
+</div>
+<img src="3.png" width="100%">
+</body >
+</html>
